@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio Karya AI Siswa</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header class="hero"><div class="container">
+  <p class="eyebrow">STUDENT SHOWCASE · AI COURSE</p>
+  <h1>Portofolio Karya AI</h1>
+  <p>Tempat mengumpulkan ide, eksperimen, dan karya selama belajar AI.</p>
+  <div class="profile"><div class="avatar" id="avatar">NS</div><div><strong id="displayName">Nama Siswa</strong><span id="displayBio">AI Creator · Angkatan 2026</span></div></div>
+</div></header>
+<main class="container main">
+  <section class="section">
+    <h2>Profil siswa</h2><p class="muted">Informasi yang tampil di bagian atas portofolio.</p>
+    <form class="panel" id="profileForm">
+      <div class="grid">
+        <div class="field"><label for="studentName">Nama siswa</label><input id="studentName" maxlength="80" required placeholder="Contoh: Jihan Putri"></div>
+        <div class="field"><label for="studentBio">Keterangan singkat</label><input id="studentBio" maxlength="120" placeholder="AI Creator · Batch 3"></div>
+      </div>
+      <button class="primary" type="submit">Simpan profil</button>
+    </form>
+  </section>
+  <section class="section">
+    <h2>Tambah project</h2><p class="muted">Setiap karya akan ditampilkan sebagai satu card vertikal.</p>
+    <form class="panel" id="projectForm">
+      <div class="grid">
+        <div class="field"><label for="projectTitle">Judul project *</label><input id="projectTitle" maxlength="120" required placeholder="Contoh: Podcast tentang AI"></div>
+        <div class="field"><label for="projectType">Jenis karya</label><select id="projectType"><option value="auto">Deteksi otomatis</option><option value="MP3">Audio / MP3</option><option value="PDF">Dokumen / PDF</option><option value="HTML">Website / HTML</option><option value="MP4">Video / MP4</option><option value="PNG">Gambar / PNG</option><option value="OTHER">Lainnya</option></select></div>
+        <div class="field full"><label for="projectDescription">Deskripsi project</label><textarea id="projectDescription" rows="4" maxlength="1200" placeholder="Tujuan project, tools AI yang digunakan, dan hal yang dipelajari..."></textarea></div>
+        <div class="field full"><label for="projectFile">File karya *</label><input id="projectFile" type="file" required accept=".mp3,.pdf,.html,.htm,.mp4,.png,.jpg,.jpeg,.webp,.gif,.wav,.txt,.zip"><small>File disimpan di IndexedDB browser ini. Kapasitas bergantung pada browser dan perangkat.</small></div>
+      </div>
+      <div class="actions"><button class="primary" id="submitProject" type="submit">＋ Tambahkan project</button><button class="secondary" type="reset">Reset form</button></div>
+      <p id="status" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+  <section class="section">
+    <div class="list-heading"><div><h2>Karya saya</h2><p class="muted" id="projectCount">Memuat project...</p></div><button class="secondary" id="hideSamples" type="button">Sembunyikan contoh</button></div>
+    <div id="projectList" class="project-list"></div>
+  </section>
+  <p class="notice"><strong>Catatan penyimpanan:</strong> data tersimpan di browser/perangkat ini, bukan di server. Jangan hapus data situs jika ingin mempertahankan koleksi. Untuk login dan akses dari perangkat lain, dibutuhkan backend/database online.</p>
+</main>
+<footer>Portofolio Karya AI Siswa · Template belajar</footer>
+</body></html>
