@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portofolio AI – Nama Siswa</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ============ 1. PROFIL SISWA (ganti isinya) ============ -->
+  <header class="hero">
+    <img class="avatar" src="assets/images/foto-profil.png" alt="Foto profil siswa">
+    <h1>Nama Siswa</h1>
+    <p>Siswa kursus AI di Algonova. Di sini saya menampilkan project yang saya buat selama belajar.</p>
+    <div class="links">
+      <a href="https://github.com/USERNAME" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/USERNAME" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </header>
+
+  <!-- ============ 2. DAFTAR CARD (disusun vertikal) ============ -->
+  <nav class="filters" aria-label="Filter project">
+    <button type="button" data-filter="all" aria-pressed="true">Semua</button>
+    <button type="button" data-filter="png" aria-pressed="false">PNG</button>
+    <button type="button" data-filter="pdf" aria-pressed="false">PDF</button>
+    <button type="button" data-filter="html" aria-pressed="false">HTML</button>
+    <button type="button" data-filter="mp4" aria-pressed="false">MP4</button>
+    <button type="button" data-filter="mp3" aria-pressed="false">MP3</button>
+  </nav>
+
+  <main class="stack">
+
+    <!-- Tambahkan data-type="png|pdf|html|mp4|mp3" di setiap <article> agar filter berfungsi -->
+    <!-- ===== CARD 1 — PNG (gambar) ===== -->
+    <article class="card" id="project-1" data-type="png">
+      <div class="card-head">
+        <div class="num">01</div>
+        <div>
+          <h2>Poster Hasil Generative AI</h2>
+          <div class="meta"><span class="badge b-png">PNG</span><span>Oktober 2026</span></div>
+        </div>
+      </div>
+      <div class="media">
+        <img src="assets/images/poster-ai.png" alt="Poster hasil generate AI" loading="lazy">
+      </div>
+      <div class="body">
+        <p>Poster bertema lingkungan yang saya buat dengan text-to-image, lalu saya rapikan komposisinya.</p>
+        <h3>Prompt</h3>
+        <p class="prompt">“Poster flat illustration, kota hijau, warna pastel, ruang kosong untuk teks.”</p>
+        <h3>Tools</h3>
+        <ul class="tags"><li>Midjourney</li><li>Canva</li></ul>
+      </div>
+      <div class="actions">
+        <a class="btn primary" href="assets/images/poster-ai.png" target="_blank" rel="noopener">Lihat ukuran penuh</a>
+        <a class="btn" href="assets/images/poster-ai.png" download>Unduh</a>
+      </div>
+    </article>
+
+    <!-- ===== CARD 2 — PDF (dokumen) ===== -->
+    <article class="card" id="project-2" data-type="pdf">
+      <div class="card-head">
+        <div class="num">02</div>
+        <div>
+          <h2>Laporan Analisis Data dengan AI</h2>
+          <div class="meta"><span class="badge b-pdf">PDF</span><span>Oktober 2026</span></div>
+        </div>
+      </div>
+      <div class="media">
+        <iframe src="assets/pdf/laporan-analisis.pdf" title="Pratinjau laporan PDF" loading="lazy"></iframe>
+      </div>
+      <div class="body">
+        <p>Laporan 6 halaman berisi ringkasan dataset penjualan dan insight yang dihasilkan bersama AI.</p>
+        <h3>Tools</h3>
+        <ul class="tags"><li>ChatGPT</li><li>Google Sheets</li></ul>
+      </div>
+      <div class="actions">
+        <a class="btn primary" href="assets/pdf/laporan-analisis.pdf" target="_blank" rel="noopener">Buka PDF</a>
+        <a class="btn" href="assets/pdf/laporan-analisis.pdf" download>Unduh</a>
+      </div>
+    </article>
+
+    <!-- ===== CARD 3 — HTML (website / mini-app) ===== -->
+    <article class="card" id="project-3" data-type="html">
+      <div class="card-head">
+        <div class="num">03</div>
+        <div>
+          <h2>Website Chatbot Sederhana</h2>
+          <div class="meta"><span class="badge b-html">HTML</span><span>November 2026</span></div>
+        </div>
+      </div>
+      <div class="media">
+        <iframe src="assets/html/chatbot/index.html" title="Demo website chatbot" loading="lazy"></iframe>
+      </div>
+      <div class="body">
+        <p>Halaman web interaktif yang menjawab pertanyaan seputar jadwal kursus. Demo langsung bisa dicoba di atas.</p>
+        <h3>Tools</h3>
+        <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Claude</li></ul>
+      </div>
+      <div class="actions">
+        <a class="btn primary" href="assets/html/chatbot/index.html" target="_blank" rel="noopener">Buka di tab baru</a>
+        <a class="btn" href="https://github.com/USERNAME/REPO/tree/main/assets/html/chatbot" target="_blank" rel="noopener">Lihat kode</a>
+      </div>
+    </article>
+
+    <!-- ===== CARD 4 — MP4 (video) ===== -->
+    <article class="card" id="project-4" data-type="mp4">
+      <div class="card-head">
+        <div class="num">04</div>
+        <div>
+          <h2>Video Penjelasan Produk dengan AI</h2>
+          <div class="meta"><span class="badge b-mp4">MP4</span><span>November 2026</span></div>
+        </div>
+      </div>
+      <div class="media">
+        <video controls preload="metadata" poster="assets/images/thumb-video.png">
+          <source src="assets/video/demo-produk.mp4" type="video/mp4">
+          Browser kamu tidak mendukung pemutar video.
+        </video>
+      </div>
+      <div class="body">
+        <p>Video 45 detik dengan narasi dan visual yang dibuat dengan tools AI, lalu disunting.</p>
+        <h3>Tools</h3>
+        <ul class="tags"><li>Runway</li><li>CapCut</li></ul>
+      </div>
+      <div class="actions">
+        <a class="btn" href="assets/video/demo-produk.mp4" download>Unduh video</a>
+      </div>
+    </article>
+
+    <!-- ===== CARD 5 — MP3 (audio) ===== -->
+    <article class="card" id="project-5" data-type="mp3">
+      <div class="card-head">
+        <div class="num">05</div>
+        <div>
+          <h2>Voice-over Pengenalan Diri</h2>
+          <div class="meta"><span class="badge b-mp3">MP3</span><span>Desember 2026</span></div>
+        </div>
+      </div>
+      <div class="media">
+        <div class="cover"><img src="assets/images/cover-audio.png" alt="Sampul audio" loading="lazy"></div>
+        <audio controls preload="none">
+          <source src="assets/audio/voice-over.mp3" type="audio/mpeg">
+          Browser kamu tidak mendukung pemutar audio.
+        </audio>
+      </div>
+      <div class="body">
+        <p>Audio 30 detik hasil text-to-speech dari naskah yang saya tulis sendiri.</p>
+        <h3>Tools</h3>
+        <ul class="tags"><li>ElevenLabs</li></ul>
+      </div>
+      <div class="actions">
+        <a class="btn" href="assets/audio/voice-over.mp3" download>Unduh audio</a>
+      </div>
+    </article>
+
+    <!--
+    ===== TEMPLATE CARD KOSONG — salin blok ini untuk project baru =====
+    Pilih SATU blok <div class="media"> sesuai jenis file, hapus yang lain:
+
+    [PNG]   <img src="assets/images/NAMA.png" alt="Deskripsi" loading="lazy">
+    [PDF]   <iframe src="assets/pdf/NAMA.pdf" title="Judul"></iframe>
+    [HTML]  <iframe src="assets/html/NAMA-FOLDER/index.html" title="Judul"></iframe>
+    [MP4]   <video controls preload="metadata"><source src="assets/video/NAMA.mp4" type="video/mp4"></video>
+    [MP3]   <audio controls><source src="assets/audio/NAMA.mp3" type="audio/mpeg"></audio>
+
+    <article class="card" id="project-6" data-type="png">
+      <div class="card-head">
+        <div class="num">06</div>
+        <div>
+          <h2>JUDUL PROJECT</h2>
+          <div class="meta"><span class="badge b-png">JENIS</span><span>BULAN TAHUN</span></div>
+        </div>
+      </div>
+      <div class="media"> ...pilih blok di atas... </div>
+      <div class="body">
+        <p>Deskripsi singkat: apa yang dibuat dan apa yang dipelajari.</p>
+        <h3>Tools</h3>
+        <ul class="tags"><li>Tool 1</li><li>Tool 2</li></ul>
+      </div>
+      <div class="actions">
+        <a class="btn primary" href="assets/.../NAMA.ext" target="_blank" rel="noopener">Buka</a>
+        <a class="btn" href="assets/.../NAMA.ext" download>Unduh</a>
+      </div>
+    </article>
+    -->
+
+  </main>
+  <p class="empty" id="empty" hidden>Belum ada project untuk jenis file ini.</p>
+
+  <footer class="site">© <span id="year">2026</span> Nama Siswa · Dibuat dengan HTML &amp; GitHub Pages</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
